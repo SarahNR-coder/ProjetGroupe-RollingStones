@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleContact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Images/LogoRollingStones.png" alt="Logo Rolling Stones Rouge">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="PageAccueil.html">Accueil</a></li>
+                <li><a href="">Biographie</a></li>
+                <li><a href="">Discographie</a></li>
+                <li><a href="concerts.html">Concerts</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="Boutique.html">Boutique</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Formulaire de contact</legend>
+                    <label for="Prenom">Prenom:</label>
+                    <input type="text" id="Prenom" placeholder="Votre prenom" autofocus><br>
+                    <label for="Nom">Nom:</label>
+                    <input type="text" id="Nom" placeholder="Votre nom"><br>
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" id="e-mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]" minlength="8"
+                        maxlength="30" placeholder="Votre e-mail" required autofocus><br>
+                    <label for="sujet">Sujet</label>
+                    <select name="sujets" id="sujets">
+                        <option value="General">Demande générale</option>
+                        <option value="Concerts">Question sur les concerts ou les billets</option>
+                        <option value="Boutique">Merchandising et boutique officielle</option>
+                        <option value="SupportTechnique">Support technique du site web</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                    <br>
+                    <textarea name="Message" id="message" cols="40" rows="10" maxlength="600" required></textarea>
+                    <br>
+                    <input class="boutton" type="submit" value="Envoyer votre message">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="EasterEgg">
+            <a href=""><img src="./Images/langueRS.png" alt="Photo LangueRS EasterEgg" width="100px"></a>
+        </div>
+        <div class="ReseauxSociaux">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="./icons/facebook_blanc.svg" alt="logo facebook"></a>
+                </li>
+                <li><a href="https://x.com/"><img src="./icons/square-x-twitter_blanc.svg" alt="logo X"></a></li>
+                <li><a href=""><img src="./icons/square-instagram_blanc.svg" alt="logo instagram"></a></li>
+            </ul>
+            <div>
+                <p class="CopyRight">&copy; Tous droits réservés. 2024 </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
