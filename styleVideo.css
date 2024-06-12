@@ -16,7 +16,7 @@ body{
 }
 
 /*Header*/
-header{
+header {
     display: grid;
     grid-template-columns: 1fr;
     background-color: black;
@@ -24,38 +24,44 @@ header{
     height: 150px;
     padding-bottom: 5px;
 }
-.logo{
-    display:flex;
+
+.logo {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     max-width: 400px;
     height: auto;
 }
-nav{
+
+nav {
     display: grid;
 }
-nav ul{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-   padding-left:100px;
-   list-style: none;
-   max-width: 1800px;
-  
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 1800px;
+
 }
-nav ul li{
+
+nav ul li {
     background-color: #EA2225;
     border: 1px white solid;
     border-radius: 10px;
     text-align: center;
     width: 150px;
 }
-li a{
-    font-family: 'Unlock';  
+
+li a {
+    font-family: 'Unlock';
     text-decoration: none;
     color: black;
 }
@@ -101,10 +107,10 @@ footer {
     align-items: center;
     padding: 10px;
     background-color: black;
-    color: white; 
+    color: white;
     margin-top: auto;
-    width: 100%; 
-    bottom: 0; 
+    width: 100%;
+    bottom: 0;
 }
 
 .EasterEgg {
@@ -134,5 +140,5 @@ li {
 }
 
 li a img {
-    width: 30px; 
+    width: 30px;
 }

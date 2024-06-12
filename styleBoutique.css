@@ -53,78 +53,13 @@ li a{
     text-decoration: none;
     color: black;
 }
+/*fin Header*/
 
-/*à partir du main vvvv*/
-li a img{
-    width: 20px;
-    height: auto;
-}
-
-main{
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    font-family: 'Ubuntu';
-}
-
-h1,h2{
-    font-family: 'Unlock';
-}
+/*main*/
 
 
-#bienvenue{
-    align-self: center;
-    margin-right : 20px;
-}
-#bienvenue img{
 
-    padding: 0;
-    width: 16vw;
-    height: auto;
-}
-
-article ul{
-    display: flex;
-}
-
-article ul li{
-list-style: none;
-margin: 0 15px 0 15px;
-}
-
-#photo img{
-    width: 55vw;
-}
-
-
-#actionsUtilisateurs{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left:20px;
-} 
-
-#actionsUtilisateurs article{
-    margin: 0 10px 20px 10px;
-}
-
-#actionsUtilisateurs article:nth-child(3) img{
-    width: 180px;
-    height: auto;
-    padding:0;
-    margin: 0;
-}
-
-#actionsUtilisateurs article:nth-child(3) p{
-    margin:0;
-    color: black;
-}
-
-#actionsUtilisateurs article:nth-child(3) p a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+/*fin main*/
 
 /*Footer*/
 footer {

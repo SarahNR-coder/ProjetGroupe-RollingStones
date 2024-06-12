@@ -37,7 +37,7 @@ nav ul{
    justify-content: center;
    align-items: center;
    gap: 10px;
-   padding-left:100px;
+   margin: 0 auto;
    list-style: none;
    max-width: 1800px;
   
@@ -140,7 +140,7 @@ td:nth-child(5) span{
     background-color: #EA2225;
     text-decoration: none;
     margin: 10px 0 10px 0;
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 
 /*Footer*/
