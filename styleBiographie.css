@@ -6,24 +6,25 @@
   font-family: 'Unlock';
   src: url(../fonts/Unlock/Unlock-Regular.ttf);
 }
+/*Header*/
 header {
   display: grid;
   grid-template-columns: 1fr;
   background-color: black;
   padding-top: 20px;
   height: 150px;
+  padding-bottom: 5px;
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .logo img {
   max-width: 400px;
   height: auto;
-}
-nav {
-  display: grid;
 }
 nav ul {
   display: grid;
@@ -35,18 +36,55 @@ nav ul {
   list-style: none;
   max-width: 1800px;
 }
+
 nav ul li {
-  background-color: #ea2225;
+  background-color: #EA2225;
   border: 1px white solid;
   border-radius: 10px;
   text-align: center;
   width: 150px;
 }
+
 li a {
-  font-family: "Unlock";
+  font-family: 'Unlock';
   text-decoration: none;
   color: black;
 }
+
+nav ul li:hover{
+  background: linear-gradient(rgb(233, 64, 64), rgb(235, 128, 128))
+}
+/*responsive*/
+@media (max-width: 1200px) {
+  header {
+      display: flex;
+      flex-direction: column;
+      height: auto; 
+      padding: 20px; 
+      width: auto;
+  }
+  
+  .logo img {
+      max-width: 200px; 
+      justify-self: left;
+  }
+
+  nav ul li {
+      width: 90px;
+      height: 40px;
+      margin: 10px;
+      text-align: center;
+      align-content:center ;
+      font-size: smaller; 
+  }
+}
+
+
+
+
+
+
+
 
 body {
   font-family: "Ubuntu";

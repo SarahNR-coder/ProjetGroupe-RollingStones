@@ -1,61 +1,188 @@
 @font-face {
     font-family: 'Ubuntu';
-    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+    src: url(./fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
 @font-face {
     font-family: 'Unlock';
-    src: url(../fonts/Unlock/Unlock-Regular.ttf);
+    src: url(./fonts/Unlock/Unlock-Regular.ttf);
 } 
 /*Header*/
 body{
     min-height: 100vh;
 }
 
-header{
+/*Header*/
+header {
     display: grid;
     grid-template-columns: 1fr;
     background-color: black;
     padding-top: 20px;
     height: 150px;
+    padding-bottom: 5px;
 }
-.logo{
-    display:flex;
+
+.logo {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     max-width: 400px;
     height: auto;
 }
-nav{
+nav ul {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 1800px;
 }
-nav ul{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-   margin: 0 auto;
-   list-style: none;
-   max-width: 1800px;
-  
-}
-nav ul li{
+
+nav ul li {
     background-color: #EA2225;
     border: 1px white solid;
     border-radius: 10px;
     text-align: center;
     width: 150px;
 }
-li a{
-    font-family: 'Unlock';  
+
+li a {
+    font-family: 'Unlock';
     text-decoration: none;
     color: black;
 }
+
+nav ul li:hover{
+    background: linear-gradient(rgb(233, 64, 64), rgb(235, 128, 128))
+}
+/*responsive*/
+@media (max-width: 1300px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+        width: auto;
+    }
+    
+    .logo img {
+        max-width: 200px; 
+        justify-self: left;
+    }
+
+    nav ul li {
+        width: 90px;
+        height: 40px;
+        margin: 10px;
+        text-align: center;
+        align-content:center ;
+        font-size: smaller; 
+    }
+}
+
 /*fin Header*/
 
 /*main*/
+
+
+h1{
+    /* margin: 20px 0 30px 0; */
+    margin: 1vw 0 1.5vw 0;
+}
+
+h1,h2{
+    font-family: 'Unlock';
+}
+
+aside{
+    font-family: 'Ubuntu';
+    float:left;
+    width: 12%;
+    height: fit-content;
+    background-color:#EA2225;
+    padding: 15px 0 20px 20px;
+}
+
+
+
+h2 + ul{
+    display:flex;
+    flex-direction: column;
+    margin: 10px 0 0 20px;
+    /* background-color: orange;*/
+} 
+
+h2+ ul li{
+    margin: 5px 0 0 0;
+    /* background-color: orchid; */
+}
+
+h2 + ul li span{
+    margin: 20px 0 15px  0;
+}
+
+li ul {
+    display:flex;
+    flex-direction: column;
+    margin: 10px 0 0 20px;
+    /* background-color: orangered; */
+}
+ 
+li ul li{
+    /* background-color: blueviolet; */
+    margin: 0 0 13.5px 0;
+}
+
+.categorie:hover , .sousCategorie:hover{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: yellow; */
+    margin-bottom: 2vw;
+    padding: 15px 0 15px 70px;
+}
+
+section{
+    /* width: fit-content; */
+    display: flex;
+    /* background-color: white; */
+}
+
+article img{
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+    /* border: 3px solid yellow; */
+}
+
+article p{
+    padding: 0 0 0 10px;
+}
+
+article{
+    width: 18vw;
+    /* background-color: blue; */
+    margin: 0.7vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img:hover{
+    transform: scale(1.7);
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
 
 
 
@@ -71,7 +198,7 @@ footer {
     color: white; 
     margin-top: auto;
     width: 100%; 
-    position: fixed; 
+    /*position: fixed;*/
     bottom: 0; 
 }
 
@@ -104,3 +231,4 @@ li {
 li a img {
     width: 30px; 
 }
+

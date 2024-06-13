@@ -25,6 +25,7 @@ header {
     background-color: black;
     padding-top: 20px;
     height: 150px;
+    padding-bottom: 5px;
 }
 
 .logo {
@@ -37,11 +38,6 @@ header {
     max-width: 400px;
     height: auto;
 }
-
-nav {
-    display: grid;
-}
-
 nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -51,7 +47,6 @@ nav ul {
     margin: 0 auto;
     list-style: none;
     max-width: 1800px;
-
 }
 
 nav ul li {
@@ -68,8 +63,33 @@ li a {
     color: black;
 }
 
+nav ul li:hover{
+    background: linear-gradient(rgb(233, 64, 64), rgb(235, 128, 128))
+}
+/*responsive*/
+@media (max-width: 1200px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+        width: auto;
+    }
+    
+    .logo img {
+        max-width: 200px; 
+        justify-self: left;
+    }
 
-
+    nav ul li {
+        width: 90px;
+        height: 40px;
+        margin: 10px;
+        text-align: center;
+        align-content:center ;
+        font-size: smaller; 
+    }
+}
 
 /*Galerie*/
 main {
@@ -87,18 +107,33 @@ main div {
 }
 
 main img {
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     border: 1px solid #EA2225;
     margin: 10px;
+    transition-property: width;
+    transition-duration: 1s;
+    
 }
+.container img:hover {
+    width: 600px;
+    height: 400px;
+}
+
 
 .container3 img {
     width: 400px;
     height: 400px;
     border: 1px solid #EA2225;
-
+    transition-property: width;
+    transition-duration: 1s;
 }
+
+.container3 img:hover {
+    width: 500px;
+    height: 500px;
+}
+
 
 h1 {
     font-family: "Unlock";
@@ -111,7 +146,6 @@ h2 {
     margin-left: 20px;
     color: #EA2225;
 }
-
 
 
 /*Footer*/

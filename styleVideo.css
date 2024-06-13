@@ -16,6 +16,7 @@ body{
 }
 
 /*Header*/
+/*Header*/
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -35,11 +36,6 @@ header {
     max-width: 400px;
     height: auto;
 }
-
-nav {
-    display: grid;
-}
-
 nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -49,7 +45,6 @@ nav ul {
     margin: 0 auto;
     list-style: none;
     max-width: 1800px;
-
 }
 
 nav ul li {
@@ -64,6 +59,34 @@ li a {
     font-family: 'Unlock';
     text-decoration: none;
     color: black;
+}
+
+nav ul li:hover{
+    background: linear-gradient(rgb(233, 64, 64), rgb(235, 128, 128))
+}
+/*responsive*/
+@media (max-width: 1200px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+        width: auto;
+    }
+    
+    .logo img {
+        max-width: 200px; 
+        justify-self: left;
+    }
+
+    nav ul li {
+        width: 90px;
+        height: 40px;
+        margin: 10px;
+        text-align: center;
+        align-content:center ;
+        font-size: smaller; 
+    }
 }
 
 /*Main*/
@@ -95,7 +118,16 @@ h3{
     font-family: "Ubuntu";
 }
 
-
+@media (max-width:1000px){
+    main{
+            width: 98%;
+            height: 100%;
+            margin: 1%;
+    }
+    iframe{
+        width: auto;
+    }
+}
 
 
 
